@@ -88,11 +88,22 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
-  gap: 38px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: start;
   min-height: auto;
-  padding: 44px 0 46px;
+  padding: 34px 0 44px;
+}
+
+.hero-copy {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.75fr) minmax(320px, 1fr);
+  gap: 28px 44px;
+  align-items: end;
+}
+
+.hero-copy .conference-mark {
+  grid-column: 1 / -1;
 }
 
 .conference-mark {
@@ -134,10 +145,10 @@ p {
 }
 
 h1 {
-  max-width: 720px;
+  max-width: 620px;
   margin: 0;
-  font-size: clamp(1.9rem, 3.55vw, 3.35rem);
-  line-height: 1.08;
+  font-size: clamp(1.65rem, 3vw, 2.75rem);
+  line-height: 1.1;
   letter-spacing: 0;
 }
 
@@ -155,24 +166,24 @@ h3 {
 }
 
 .subtitle {
-  margin: 18px 0 0;
+  margin: 14px 0 0;
   color: var(--teal);
   font-size: clamp(0.96rem, 1.35vw, 1.12rem);
   font-weight: 800;
 }
 
 .hero-text {
-  max-width: 660px;
-  margin: 20px 0 0;
+  max-width: 620px;
+  margin: 0;
   color: var(--muted);
-  font-size: 0.98rem;
+  font-size: 0.94rem;
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 18px;
 }
 
 .button {
@@ -454,13 +465,13 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
+  .hero-copy {
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     min-height: auto;
     padding-top: 38px;
-  }
-
-  .hero-visual {
-    order: -1;
   }
 
   .snapshot-grid {
