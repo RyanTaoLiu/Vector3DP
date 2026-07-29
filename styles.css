@@ -221,7 +221,8 @@ h3 {
 }
 
 .hero-visual,
-.result-grid figure {
+.result-grid figure,
+.printing-result-figure {
   margin: 0;
   overflow: visible;
   border: 1px solid var(--line);
@@ -294,6 +295,26 @@ figcaption {
 
 .result-feature {
   grid-column: span 2;
+}
+
+.printing-section .section-heading {
+  max-width: 880px;
+}
+
+.printing-section .section-heading p:last-child {
+  max-width: 780px;
+  color: var(--muted);
+}
+
+.printing-result-figure {
+  width: min(100%, 1120px);
+}
+
+.printing-result-figure img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #fff;
 }
 
 .agenda-section {
