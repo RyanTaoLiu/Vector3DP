@@ -165,10 +165,21 @@ h1 {
 }
 
 .authors {
-  margin: 12px 0 0;
+  max-width: 780px;
+  margin: 10px 0 0;
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 750;
+}
+
+.authors a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.authors a:hover {
+  color: var(--blue);
+  text-decoration: underline;
 }
 
 h2 {
