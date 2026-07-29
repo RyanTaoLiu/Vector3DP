@@ -77,46 +77,62 @@
         <div class="agenda-copy">
           <p class="section-label">Agenda</p>
           <h2>3h 45m course format</h2>
+          <p class="agenda-intro">
+            The course includes a 1h 40m tutorial session, a 15-minute break,
+            and a 1h 50m hands-on practice and discussion session.
+          </p>
           <div class="agenda-list">
-            <article>
-              <time>Part 1</time>
-              <p><strong>Introduction.</strong> Motivation for moving beyond planar slicing and framing multi-axis printing as a design-to-fabrication pipeline.</p>
+            <article class="agenda-part-one">
+              <time>10m</time>
+              <p><strong>Introduction.</strong> Importance and impact of multi-axis 3D printing, the design-to-fabrication workflow, and links to motion planning and inverse kinematics. <span>Presenter: Wang</span></p>
             </article>
-            <article>
-              <time>Part 1</time>
-              <p><strong>Field based and support-free planning.</strong> Scalar fields, support-aware layer generation, and manufacturable curved-layer decomposition.</p>
+            <article class="agenda-part-one">
+              <time>20m</time>
+              <p><strong>Support-free planning.</strong> Region-based and field-based decomposition strategies, scalar-field layer and toolpath generation, and IK optimization challenges. <span>Presenter: Dai</span></p>
             </article>
-            <article>
-              <time>Part 1</time>
-              <p><strong>Anisotropic and reinforcement planning.</strong> Path orientation, fiber alignment, and strength-aware deposition for reinforced extrusion.</p>
+            <article class="agenda-part-one">
+              <time>20m</time>
+              <p><strong>Anisotropic mechanical property and reinforcement.</strong> Vector-field control of anisotropy, filament alignment, material orientation, reinforcement goals, and fiber-reinforced thermoplastics. <span>Presenter: Fang</span></p>
             </article>
-            <article>
-              <time>Part 1</time>
-              <p><strong>Multi-objectives and co-optimization.</strong> S3/Neural Slicer ideas, fabrication fields, structural objectives, and process-aware optimization.</p>
+            <article class="agenda-part-one">
+              <time>20m</time>
+              <p><strong>Multi-objectives and design-fabrication co-optimization.</strong> Deformation-based curved-layer planning, neural formulations, and end-to-end design-fabrication co-optimization. <span>Presenter: Liu</span></p>
             </article>
-            <article>
-              <time>Part 1</time>
-              <p><strong>Toolpath and collision avoidance.</strong> Accessibility, clearance, continuous toolpaths, inverse-kinematics continuity, and support-aware execution.</p>
+            <article class="agenda-part-one">
+              <time>20m</time>
+              <p><strong>Direct control over collision avoidance and toolpath geometry.</strong> Accessibility, clearance, SDF-based collision checking, neural implicit fields, and support/orientation-aware optimization. <span>Presenter: Dutta</span></p>
+            </article>
+            <article class="agenda-part-one">
+              <time>10m</time>
+              <p><strong>Wrap-up.</strong> Recent developments including learning-based path planning, in-situ control, multi-axis DLP printing, hybrid manufacturing, and hands-on briefing. <span>Presenter: Wang</span></p>
             </article>
             <article class="agenda-break">
               <time>15m</time>
-              <p><strong>Break.</strong> Transition from foundation and principles to hands-on practice.</p>
+              <p><strong>Break.</strong> Attendees begin downloading the Python-based open-source Vector3DP platform from the Digital Manufacturing Lab.</p>
             </article>
-            <article>
-              <time>Part 2</time>
-              <p><strong>Slicing for multi-axis motion.</strong> Planning curved layers and tool orientations for robot or five-axis platforms.</p>
+            <article class="agenda-part-two">
+              <time>20m</time>
+              <p><strong>Environment setup.</strong> Download the slicer code, configure the runtime, and review modules for loading conditions, FEA, visualization, collision checking, and result verification. <span>Presenters: Liu and Dutta</span></p>
             </article>
-            <article>
-              <time>Part 2</time>
-              <p><strong>Slicing for 3-axis motion.</strong> Fixed-nozzle non-planar FFF constraints and accessible desktop practice.</p>
+            <article class="agenda-part-two">
+              <time>20m</time>
+              <p><strong>Slicing for 5-axis motion.</strong> Generate curved layers for collision-free and support-free slicing, compare ablation settings, and adjust support-free constraints and printhead geometry. <span>Presenters: Fang and Dutta</span></p>
             </article>
-            <article>
-              <time>Part 2</time>
-              <p><strong>Toolpath and G-code generation.</strong> Connect planning outputs to executable paths, G-code export, and hardware handoff.</p>
+            <article class="agenda-part-two">
+              <time>20m</time>
+              <p><strong>Slicing for 3-axis motion.</strong> Generate curved layers for fixed-nozzle 3D printing, modify printhead geometry, and compare mechanically guided curved layers with planar layers. <span>Presenters: Liu and Dutta</span></p>
             </article>
-            <article>
-              <time>Part 2</time>
-              <p><strong>Discussion.</strong> Open problems, practical checks, software accessibility, and follow-up project directions.</p>
+            <article class="agenda-part-two">
+              <time>20m</time>
+              <p><strong>Toolpath and G-code generation.</strong> Generate toolpaths on curved layers and produce G-code with inverse kinematics for both 5-axis and 3-axis cases. <span>Presenters: Liu and Dutta</span></p>
+            </article>
+            <article class="agenda-part-two">
+              <time>15m</time>
+              <p><strong>Machine-related parameters.</strong> Adjust slicer parameters for different machine configurations and demonstrate real-time hardware printing using prepared G-code. <span>Presenters: Liu and Dutta</span></p>
+            </article>
+            <article class="agenda-part-two">
+              <time>15m</time>
+              <p><strong>Discussion and wrap-up.</strong> Open problems in robustness, verification, material-aware slicing, machine constraints, and software accessibility. <span>Presenters: all</span></p>
             </article>
           </div>
         </div>

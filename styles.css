@@ -333,6 +333,11 @@ figcaption {
   max-width: 980px;
 }
 
+.agenda-intro {
+  max-width: 760px;
+  color: var(--muted);
+}
+
 .agenda-list {
   display: grid;
   gap: 12px;
@@ -347,12 +352,51 @@ figcaption {
 }
 
 .agenda-list time {
-  color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  border-radius: 999px;
   font-weight: 900;
 }
 
 .agenda-list p {
   margin: 0;
+}
+
+.agenda-list p span {
+  display: block;
+  margin-top: 6px;
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.agenda-part-one {
+  border-left: 5px solid var(--blue);
+}
+
+.agenda-part-one time {
+  color: #fff;
+  background: var(--blue);
+}
+
+.agenda-break {
+  border-left: 5px solid var(--amber);
+}
+
+.agenda-break time {
+  color: #fff;
+  background: var(--amber);
+}
+
+.agenda-part-two {
+  border-left: 5px solid var(--teal);
+}
+
+.agenda-part-two time {
+  color: #fff;
+  background: var(--teal);
 }
 
 .speakers {
