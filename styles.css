@@ -366,43 +366,45 @@ figcaption {
 }
 
 .speakers {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 34px;
 }
 
 .speakers article {
   position: relative;
-  overflow: hidden;
-  min-height: 0;
+  display: flow-root;
+  min-height: 150px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow: visible;
 }
 
 .speakers img {
-  width: 100%;
+  float: left;
+  width: 25%;
+  min-width: 96px;
+  max-width: 132px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center top;
+  margin: 0 18px 12px 0;
   filter: none !important;
 }
 
 .speakers span {
-  display: inline-grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  margin: 14px 0 0 16px;
-  border-radius: 999px;
-  color: #fff;
-  background: rgba(23, 32, 44, 0.82);
-  font-size: 0.82rem;
-  font-weight: 900;
+  display: none;
 }
 
 .speakers h3,
 .speakers p {
-  padding: 0 16px;
+  padding: 0;
 }
 
 .speakers h3 {
-  margin-top: 10px;
+  margin-top: 0;
+  font-size: 1rem;
 }
 
 .speakers p {
@@ -438,7 +440,7 @@ figcaption {
 
 @media (max-width: 1020px) {
   .speakers {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 }
 
@@ -487,6 +489,11 @@ figcaption {
   .result-grid,
   .speakers {
     grid-template-columns: 1fr;
+  }
+
+  .speakers img {
+    width: 32%;
+    min-width: 92px;
   }
 
   .agenda-list article {
