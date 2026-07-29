@@ -263,18 +263,12 @@ figcaption {
   margin: 0 0 10px;
 }
 
-.snapshot-grid,
 .result-grid,
 .speakers {
   display: grid;
   gap: 16px;
 }
 
-.snapshot-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.snapshot-grid article,
 .agenda-list article,
 .speakers article {
   border: 1px solid var(--line);
@@ -282,18 +276,6 @@ figcaption {
   background: var(--panel);
 }
 
-.snapshot-grid article {
-  padding: 22px;
-}
-
-.snapshot-grid span {
-  display: inline-block;
-  margin-bottom: 16px;
-  color: var(--teal);
-  font-weight: 850;
-}
-
-.snapshot-grid p,
 .agenda-list p,
 .speakers p {
   color: var(--muted);
@@ -494,9 +476,6 @@ figcaption {
     padding-top: 38px;
   }
 
-  .snapshot-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 560px) {
