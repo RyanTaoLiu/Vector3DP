@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Collision-aware robot motion</title>
+  <desc id="desc">A stylized robotic arm moving around a part while avoiding collision.</desc>
+  <rect width="900" height="560" fill="#f3f6f8"/>
+  <path d="M172 438 H340 L310 495 H130 Z" fill="#315e6f"/>
+  <circle cx="315" cy="365" r="54" fill="#fff" stroke="#315e6f" stroke-width="8"/>
+  <path d="M340 348 L500 245" stroke="#315e6f" stroke-width="36" stroke-linecap="round"/>
+  <circle cx="510" cy="238" r="42" fill="#fff" stroke="#0f7b75" stroke-width="8"/>
+  <path d="M542 216 L666 172" stroke="#0f7b75" stroke-width="28" stroke-linecap="round"/>
+  <path d="M677 168 L721 207" stroke="#1d2635" stroke-width="18" stroke-linecap="round"/>
+  <path d="M705 222 C618 285 543 323 450 340" fill="none" stroke="#b26a2c" stroke-width="7" stroke-dasharray="16 16"/>
+  <path d="M485 420 C535 335 604 296 710 278 L768 432 Z" fill="#dfece7" stroke="#315a43" stroke-width="6"/>
+  <text x="96" y="86" fill="#1d2635" font-family="Arial, sans-serif" font-size="44" font-weight="700">Robot motion</text>
+  <text x="96" y="132" fill="#627083" font-family="Arial, sans-serif" font-size="24">Accessibility, clearance, IK continuity, and collision checks.</text>
+</svg>

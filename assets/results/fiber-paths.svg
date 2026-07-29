@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Fiber-aware toolpaths</title>
+  <desc id="desc">A stylized composite shell filled with aligned fiber paths.</desc>
+  <rect width="900" height="560" fill="#f7f4ef"/>
+  <path d="M130 395 C190 160 340 96 504 139 C661 180 770 286 781 420 C600 386 450 386 288 424 C224 439 171 430 130 395 Z" fill="#fff" stroke="#315e6f" stroke-width="7"/>
+  <clipPath id="shape">
+    <path d="M130 395 C190 160 340 96 504 139 C661 180 770 286 781 420 C600 386 450 386 288 424 C224 439 171 430 130 395 Z"/>
+  </clipPath>
+  <g clip-path="url(#shape)" fill="none" stroke-linecap="round" stroke-width="9">
+    <path d="M88 374 C230 292 376 262 520 286 C620 302 712 348 826 411" stroke="#b26a2c"/>
+    <path d="M86 330 C229 249 374 224 515 250 C621 269 717 318 825 375" stroke="#0f7b75"/>
+    <path d="M100 291 C247 212 386 194 526 224 C631 247 722 288 811 337" stroke="#315a43"/>
+    <path d="M136 254 C277 188 402 174 540 205 C635 227 713 262 784 300" stroke="#315e6f"/>
+    <path d="M188 214 C310 170 430 162 548 190 C631 210 696 238 747 265" stroke="#b26a2c"/>
+  </g>
+  <text x="96" y="86" fill="#1d2635" font-family="Arial, sans-serif" font-size="44" font-weight="700">Fiber paths</text>
+  <text x="96" y="132" fill="#627083" font-family="Arial, sans-serif" font-size="24">Toolpath direction becomes a mechanical design variable.</text>
+</svg>
