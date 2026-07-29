@@ -357,7 +357,7 @@ figcaption {
 
 .speakers {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px 34px;
+  gap: 36px 44px;
 }
 
 .speakers article {
@@ -375,11 +375,9 @@ figcaption {
   float: left;
   width: 25%;
   min-width: 96px;
-  max-width: 132px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center top;
-  margin: 0 18px 12px 0;
+  max-width: 150px;
+  height: auto;
+  margin: 0 22px 14px 0;
   filter: none !important;
 }
 
@@ -490,7 +488,7 @@ figcaption {
   }
 
   .speakers img {
-    width: 32%;
+    width: 25%;
     min-width: 92px;
   }
 
