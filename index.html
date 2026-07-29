@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Computational Fabrication by Multi-Axis 3D Printing</title>
+    <meta
+      name="description"
+      content="A SIGGRAPH Asia 2026 course on computational fabrication, multi-axis 3D printing, non-planar slicing, toolpath planning, and machine-aware execution."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top">Multi-Axis 3D Printing</a>
+        <div class="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#objectives">Objectives</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#topics">Topics</a>
+          <a href="#speakers">Speakers</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">SIGGRAPH Asia 2026 Courses</p>
+          <h1>Computational Fabrication by Multi-Axis 3D Printing</h1>
+          <p class="subtitle">Foundations and Hands-on Practice</p>
+          <p class="hero-text">
+            Multi-axis 3D printing turns additive manufacturing from planar
+            layer stacking into a coupled computational problem: curved layers,
+            tool orientations, path planning, support, collision, material
+            anisotropy, surface quality, and machine constraints must be
+            reasoned about together.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="assets/main.pdf">Download PDF</a>
+            <a class="button secondary" href="#schedule">View Schedule</a>
+          </div>
+        </div>
+
+        <div class="pipeline" aria-label="Design-to-fabrication pipeline">
+          <div class="node input">Geometry</div>
+          <div class="connector"></div>
+          <div class="node field">Fields</div>
+          <div class="connector"></div>
+          <div class="node layers">Curved Layers</div>
+          <div class="connector"></div>
+          <div class="node toolpath">Toolpaths</div>
+          <div class="connector"></div>
+          <div class="node machine">Machine Motion</div>
+        </div>
+      </section>
+
+      <section id="overview" class="section split">
+        <div>
+          <p class="section-label">Course Overview</p>
+          <h2>A computational view of printing beyond planar slicing</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            The course introduces computational fabrication methods for
+            multi-axis and non-planar 3D printing, emphasizing how geometric
+            and physical objectives become manufacturable layers, executable
+            toolpaths, and verified machine motion.
+          </p>
+          <p>
+            It connects robotic curved-layer printing with constrained
+            three-axis non-planar FFF, fiber-reinforced materials, inverse
+            kinematics, collision-aware planning, and structure-fabrication
+            co-optimization.
+          </p>
+        </div>
+      </section>
+
+      <section id="objectives" class="section">
+        <div class="section-heading">
+          <p class="section-label">Learning Objectives</p>
+          <h2>What participants will be able to reason about</h2>
+        </div>
+        <div class="objectives">
+          <article>
+            <span>01</span>
+            <h3>Representations</h3>
+            <p>
+              Compare scalar fields, deformation fields, frame fields, phase
+              fields, meshes, voxels, graph planners, and neural fields for
+              layer and path generation.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Manufacturability</h3>
+            <p>
+              Identify which constraints are guaranteed by a planner and which
+              still require support, collision, reachability, thickness, or
+              controller checks.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Hardware Boundaries</h3>
+            <p>
+              Distinguish what can transfer to desktop three-axis non-planar
+              printing from what requires five-axis or robot-assisted motion.
+            </p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Material Goals</h3>
+            <p>
+              Understand how path direction, filament alignment, reinforcement
+              layout, and material anisotropy reshape slicing and toolpath
+              design.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="schedule" class="section">
+        <div class="section-heading">
+          <p class="section-label">Course Format</p>
+          <h2>3 hours 45 minutes, including a 15 minute break</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <time>1h 55m</time>
+            <div>
+              <h3>Part One: Background and Foundations</h3>
+              <p>
+                Introduction, scalar fields and support-free planning,
+                anisotropic fiber-aware deposition, S3/Neural Slicer,
+                co-optimization, and collision-free planning.
+              </p>
+            </div>
+          </article>
+          <article>
+            <time>15m</time>
+            <div>
+              <h3>Break</h3>
+              <p>A short reset between foundations and hands-on planning.</p>
+            </div>
+          </article>
+          <article>
+            <time>1h 35m</time>
+            <div>
+              <h3>Part Two: Hands-on Planning and Discussion</h3>
+              <p>
+                Five-axis planning, toolpaths, inverse kinematics, three-axis
+                constrained planning, G-code handoff, practical checks, and
+                open-problem discussion.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="topics" class="section">
+        <div class="section-heading">
+          <p class="section-label">Technical Topics</p>
+          <h2>From fields to executable fabrication</h2>
+        </div>
+        <div class="topic-grid">
+          <article>
+            <h3>Scalar Fields and Support-Free Planning</h3>
+            <p>
+              Curved layers arise as iso-values of scalar fields, allowing
+              planners to connect layer thickness, surface following, support
+              reduction, and manufacturable deposition directions.
+            </p>
+          </article>
+          <article>
+            <h3>Reinforced FDM and Fiber-Aware Deposition</h3>
+            <p>
+              Path direction becomes a mechanical design variable when
+              filament alignment and continuous fiber reinforcement affect
+              anisotropic strength and structural performance.
+            </p>
+          </article>
+          <article>
+            <h3>S3-Slicer, Neural Slicer, and Co-Optimization</h3>
+            <p>
+              Deformation-based maps, rotation and scale fields, neural slicing
+              fields, and topology-aware objectives connect layer generation
+              with structure-fabrication co-design.
+            </p>
+          </article>
+          <article>
+            <h3>Collision-Free Planning and Toolpaths</h3>
+            <p>
+              A planned path must remain accessible, avoid collisions, satisfy
+              clearance constraints, and transition into continuous toolpaths
+              and inverse-kinematics-feasible machine motion.
+            </p>
+          </article>
+          <article>
+            <h3>Five-Axis Planning and IK</h3>
+            <p>
+              Hands-on examples compare collision-aware and semi-continuous
+              toolpaths, then refine tool orientations, kinematic redundancy,
+              and waypoint timing.
+            </p>
+          </article>
+          <article>
+            <h3>Three-Axis Non-Planar Practice</h3>
+            <p>
+              Fixed-nozzle printers cannot rotate the tool, but can still use
+              surface-following paths to improve top surfaces, reduce
+              stair-stepping, and explore limited material-orientation control.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="speakers" class="section">
+        <div class="section-heading">
+          <p class="section-label">Course Presenters</p>
+          <h2>Researchers spanning geometry, robotics, and digital manufacturing</h2>
+        </div>
+        <div class="speakers">
+          <article>
+            <h3>Charlie C.L. Wang</h3>
+            <p>
+              Professor and Chair in Smart Manufacturing, Director of the
+              Digital Manufacturing Lab, and Department Head of Research at The
+              University of Manchester.
+            </p>
+          </article>
+          <article>
+            <h3>Chengkai Dai</h3>
+            <p>
+              Postdoctoral Fellow at the Centre for Perceptual and Interactive
+              Intelligence, The Chinese University of Hong Kong, working on
+              computational and robotic fabrication.
+            </p>
+          </article>
+          <article>
+            <h3>Guoxin Fang</h3>
+            <p>
+              Lead of the Computational Robotics and Manufacturing Lab at The
+              Chinese University of Hong Kong, focusing on robotics, geometry
+              computing, and advanced manufacturing.
+            </p>
+          </article>
+          <article>
+            <h3>Neelotpal Dutta</h3>
+            <p>
+              Postdoctoral Fellow at The University of Manchester researching
+              geometric computing, digital manufacturing, and toolpath
+              generation.
+            </p>
+          </article>
+          <article>
+            <h3>Tao Liu</h3>
+            <p>
+              Ph.D. student at The University of Manchester working on
+              neural-based design and manufacturing optimization for additive
+              manufacturing and robotics.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-problems" class="section closing">
+        <div>
+          <p class="section-label">Limits and Open Problems</p>
+          <h2>What still needs better computational tools</h2>
+        </div>
+        <ul class="problem-list">
+          <li>Stable multi-objective optimization with interpretable trade-offs.</li>
+          <li>Semi-continuous paths that handle symmetry, singularities, and branch cuts.</li>
+          <li>Continuous carbon-fiber paths with manufacturable turning, anchoring, and overlap behavior.</li>
+          <li>Tighter coupling between fabrication planning, inverse kinematics, calibration, and controller limits.</li>
+          <li>Fast digital twins for online state estimation, collision updates, and toolpath correction.</li>
+          <li>Learning-driven planning methods that remain verifiable under hard fabrication constraints.</li>
+          <li>Reliable diagnostics and fallbacks when a model cannot be printed as planned.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Computational Fabrication by Multi-Axis 3D Printing</p>
+      <a href="assets/main.pdf">Course PDF</a>
+    </footer>
+  </body>
+</html>
