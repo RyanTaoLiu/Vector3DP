@@ -289,7 +289,7 @@ figcaption {
 }
 
 .result-grid {
-  grid-template-columns: minmax(0, 1.12fr) minmax(0, 1.88fr);
+  grid-template-columns: minmax(0, 1.28fr) minmax(0, 1.72fr);
   align-items: stretch;
 }
 
@@ -301,7 +301,7 @@ figcaption {
 
 .result-grid img {
   width: 100%;
-  height: clamp(230px, 20vw, 310px);
+  height: clamp(260px, 22vw, 340px);
   object-fit: contain;
   object-position: center;
   background: #fff;
@@ -321,7 +321,8 @@ figcaption {
 }
 
 .printing-result-figure {
-  width: min(100%, 1120px);
+  width: min(75%, 1120px);
+  margin: 0 auto;
 }
 
 .printing-result-figure img {
