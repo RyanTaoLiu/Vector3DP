@@ -294,8 +294,9 @@ figcaption {
 
 .result-grid img {
   width: 100%;
-  height: auto;
+  height: clamp(230px, 20vw, 310px);
   object-fit: contain;
+  object-position: center;
   background: #fff;
 }
 
@@ -537,8 +538,8 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
-  .result-feature {
-    grid-column: span 1;
+  .result-grid img {
+    height: auto;
   }
 
   .speakers img {
