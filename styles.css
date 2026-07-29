@@ -262,8 +262,6 @@ figcaption {
 
 .snapshot-grid article,
 .agenda-list article,
-.siggraph-card,
-.conference-facts,
 .speakers article {
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -283,8 +281,6 @@ figcaption {
 
 .snapshot-grid p,
 .agenda-list p,
-.siggraph-card p,
-.conference-facts,
 .speakers p {
   color: var(--muted);
 }
@@ -305,8 +301,36 @@ figcaption {
   margin: 0 auto;
 }
 
-.agenda-section,
-.conference-section {
+.print-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 260px;
+  padding: 24px;
+  border: 1px dashed rgba(49, 94, 111, 0.45);
+  border-radius: 10px;
+  color: var(--muted);
+  background:
+    linear-gradient(135deg, rgba(49, 94, 111, 0.08), rgba(178, 106, 44, 0.08)),
+    var(--panel);
+  text-align: center;
+}
+
+.print-placeholder span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--amber);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.print-placeholder strong {
+  color: var(--ink);
+  font-size: 1.25rem;
+}
+
+.agenda-section {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
   gap: 28px;
@@ -339,34 +363,6 @@ figcaption {
   width: 100%;
   height: auto;
   object-fit: contain;
-}
-
-.siggraph-card {
-  min-height: 260px;
-  padding: 28px;
-  background:
-    linear-gradient(140deg, rgba(178, 106, 44, 0.12), rgba(15, 123, 117, 0.08)),
-    var(--panel);
-}
-
-.siggraph-card p {
-  max-width: 720px;
-}
-
-.siggraph-card a {
-  color: var(--blue);
-  font-weight: 850;
-}
-
-.conference-facts {
-  display: grid;
-  gap: 12px;
-  padding: 22px;
-}
-
-.conference-facts span {
-  padding-left: 16px;
-  border-left: 4px solid var(--amber);
 }
 
 .speakers {
@@ -458,8 +454,7 @@ figcaption {
   }
 
   .hero,
-  .agenda-section,
-  .conference-section {
+  .agenda-section {
     grid-template-columns: 1fr;
   }
 
