@@ -401,7 +401,7 @@ figcaption {
 
 .speakers {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 36px 44px;
+  gap: 42px 48px;
 }
 
 .speakers article {
@@ -441,7 +441,8 @@ figcaption {
 
 .speakers p {
   margin-top: 0;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
+  line-height: 1.55;
 }
 
 .footer {
