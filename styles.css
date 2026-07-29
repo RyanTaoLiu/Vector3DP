@@ -282,50 +282,18 @@ figcaption {
 
 .result-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: stretch;
+  align-items: start;
 }
 
 .result-grid img {
   width: 100%;
-  height: 260px;
+  height: auto;
   object-fit: contain;
   background: #fff;
 }
 
-.result-grid .result-tall img {
-  width: 100%;
-  height: 260px;
-  margin: 0 auto;
-}
-
-.print-placeholder {
-  display: grid;
-  place-items: center;
-  min-height: 260px;
-  height: 260px;
-  padding: 24px;
-  border: 1px dashed rgba(49, 94, 111, 0.45);
-  border-radius: 10px;
-  color: var(--muted);
-  background:
-    linear-gradient(135deg, rgba(49, 94, 111, 0.08), rgba(178, 106, 44, 0.08)),
-    var(--panel);
-  text-align: center;
-}
-
-.print-placeholder span {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--amber);
-  font-size: 0.78rem;
-  font-weight: 850;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.print-placeholder strong {
-  color: var(--ink);
-  font-size: 1.25rem;
+.result-feature {
+  grid-column: span 2;
 }
 
 .agenda-section {
@@ -533,6 +501,10 @@ figcaption {
   .result-grid,
   .speakers {
     grid-template-columns: 1fr;
+  }
+
+  .result-feature {
+    grid-column: span 1;
   }
 
   .speakers img {
