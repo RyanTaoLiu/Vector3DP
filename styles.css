@@ -300,13 +300,8 @@ figcaption {
   object-fit: contain;
 }
 
-.result-grid .result-panorama,
-.result-grid .result-wide {
-  grid-column: span 2;
-}
-
 .result-grid .result-tall img {
-  width: min(100%, 760px);
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -497,11 +492,6 @@ figcaption {
   .result-grid,
   .speakers {
     grid-template-columns: 1fr;
-  }
-
-  .result-grid .result-panorama,
-  .result-grid .result-wide {
-    grid-column: span 1;
   }
 
   .agenda-list article {
