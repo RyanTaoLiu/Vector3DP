@@ -282,8 +282,14 @@ figcaption {
 }
 
 .result-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: start;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 1.88fr);
+  align-items: stretch;
+}
+
+.result-grid figure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .result-grid img {
@@ -294,7 +300,7 @@ figcaption {
 }
 
 .result-feature {
-  grid-column: span 2;
+  grid-column: auto;
 }
 
 .printing-section .section-heading {
